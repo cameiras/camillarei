@@ -125,9 +125,20 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXBNxwVG80TceUK_FFxJMVfMfNMN1OVHE&sensor=false"></script>
 
+     <script type="text/javascript">
+         var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 37.77493, lng: -122.41942},
+            zoom: 8
+          });
+        }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXBNxwVG80TceUK_FFxJMVfMfNMN1OVHE&callback=initMap">
+    </script>
+    
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
