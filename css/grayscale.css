@@ -191,7 +191,8 @@ a:focus {
     width: 70px;
     height: 70px;
     margin-top: 15px;
-    padding: 7px 16px;
+    margin-bottom: 30px;
+    padding: 7px 16px 7px 16px;
     border: 2px solid #fff;
     border-radius: 100%!important;
     font-size: 40px;
@@ -285,7 +286,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+       /* padding-top: 250px;*/
     }
 
     .download-section {
@@ -294,7 +295,7 @@ a:focus {
 
     #map {
         height: 400px;
-        margin-top: 250px;
+       /* margin-top: 250px;*/
     }
 }
 
